@@ -1,3 +1,4 @@
+
 """Create invertible mixing networks."""
 
 import numpy as np
@@ -108,7 +109,7 @@ def construct_invertible_mlp(n: int = 20, n_layers: int = 2, n_iter_cond_thresh:
     return mixing_net
 
 
-
+# this function is modified based on https://github.com/slachapelle/disentanglement_via_mechanism_sparsity
 def get_decoder(x_dim, z_dim, seed, n_layers, load_f,save_dir, manifold='nn', smooth=False):
     rng_data_gen=np.random.default_rng(seed)
     
