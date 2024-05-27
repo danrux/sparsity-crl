@@ -1,3 +1,4 @@
+# this code is build upon https://github.com/ysharma1126/ssl_identifiability?tab=MIT-1-ov-file#readme
 from abc import ABC, abstractmethod, abstractproperty
 import torch
 from scipy import stats
