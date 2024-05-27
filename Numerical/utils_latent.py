@@ -1,3 +1,4 @@
+# the following code is build upon https://github.com/xunzheng/notears
 import numpy as np
 from scipy.special import expit as sigmoid
 import igraph as ig
