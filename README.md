@@ -1,7 +1,18 @@
 # A Sparsity Principle for Partially Observable Causal Representation Learning (ICML 2024)
 This repository contains the official implementation of the ICML 2024 paper: [A Sparsity Principle for Partially Observable Causal Representation Learning](https://arxiv.org/abs/2403.08335). This work performs by Danru Xu, Dingling Yao, Sébastien Lachapelle, Perouz Taslakian, Julius von Kügelgen, Francesco Locatello and Sara Magliacane. Please [cite](#bibtex) us when making use of our code or ideas.
 
-![]()
+
+
+**Motivating example for the Unpaired Partial Observation setting**. For more details please check our [paper](https://arxiv.org/abs/2403.08335).
+
+
+
+
+![](https://github.com/danrux/sparsity-crl/blob/main/Motivating_example.PNG)
+
+
+
+
 ## Environment
 Tested on python 3.10.
 
