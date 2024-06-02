@@ -11,7 +11,7 @@ def get_mlp(n_in: int, n_out: int,
             layers: List[int],
             layer_normalization: Union[None, Literal["bn"], Literal["gn"]] = None,
             output_normalization: Union[None, Literal["bn"], Literal["gn"]] = None,
-            output_normalization_kwargs=None, act_inf_param=0.02):
+            output_normalization_kwargs=None, act_inf_param=0.02, linear=False):
     """
     Creates an MLP.
 
@@ -34,8 +34,8 @@ def get_mlp(n_in: int, n_out: int,
                 modules.append(nn.BatchNorm1d(n_layer_out))
             elif layer_normalization == "gn":
                 modules.append(nn.GroupNorm(1, n_layer_out))
-            
-            modules.append(nn.LeakyReLU(negative_slope=act_inf_param))
+            if not linear:
+               modules.append(nn.LeakyReLU(negative_slope=act_inf_param))
         else:
             if output_normalization == "bn":
                 modules.append(nn.BatchNorm1d(n_layer_out))
