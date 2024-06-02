@@ -261,6 +261,7 @@ def main():
                  
                  ],
             output_normalization = "bn",
+            linear=True
              )  
         
         
@@ -278,7 +279,7 @@ def main():
                      (args.nn) * 10,
                      
                      ],
-            #output_normalization = "bn",
+            linear=True
              ) 
         
             
